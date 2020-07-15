@@ -34,6 +34,10 @@ a {
 	color: #6aaf08;
 	font-weight: 400;
 }
+a.hard-green{
+	color:#02504c;
+	font-weight: 400;
+}
 a:hover, a:focus {
 	text-decoration: none;
 	color: #222;
@@ -158,7 +162,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) top center no-repeat;
+	background: url(../img/imagebox/pesqueiro_roda_viva_9.jpg) top center no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -224,11 +228,16 @@ header .intro-text {
 #about .btn {
 	margin-top: 40px;
 }
+#about .about-media{
+	width: 270px;
+	height: 190px;
+}
 #about .about-media img {
 	position: relative;
 	display: block;
 	width: 100%;
-	height: auto;
+	height: 190px;
+	object-fit: cover;
 }
 #about .about-text, #about .about-desc {
 	margin-bottom: 40px;
@@ -240,7 +249,7 @@ header .intro-text {
 /* Services Section */
 #services {
 	padding: 120px 0;
-	background: #6aaf08;
+	background: #70ad47;
 }
 #services .service-media {
 	margin: 10px;
@@ -249,8 +258,7 @@ header .intro-text {
 	position: relative;
 	width: 225px;
 	height: 225px;
-	border-radius: 50%;
-	border: 10px solid rgba(255,255,255,0.1);
+	border: 5px solid rgba(255,255,255,0.1);
 }
 #services .service-desc {
 	margin: 10px 10px 40px;
@@ -384,7 +392,7 @@ ol.type li a:hover {
 }
 #testimonials .overlay {
 	padding: 120px 0;
-	background: rgba(106, 175, 8, 0.85);
+	background: rgba(44, 68, 27, 0.85);
 }
 #testimonials h2 {
 	color: #fff;
@@ -532,4 +540,9 @@ color: #777;
 }
 #footer a:hover {
 	color: #ccc;
+}
+/*new classes*/
+.text-spotlight{
+	font-weight: 400;
+	color:#70ad47;
 }

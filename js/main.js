@@ -1,9 +1,58 @@
+var galeries = {
+ type:[
+  {
+    name:"pesca",
+    css:"pesca",
+    quantidade:9
+  },
+  {
+    name:"estrutura",
+    css:"estrutura",
+    quantidade:7
+  },
+  {
+    name:"restaurante",
+    css:"restaurante",
+    quantidade:11
+  }
+ ],
+  loadImgsGalery:function(galeryName, imageNumber){
+    var template = `
+      <div class="col-sm-6 col-md-4 ${galeryName}">
+        <div class="portfolio-item">
+          <div class="hover-bg"> 
+              <a href="img/galeria/${galeryName}/${galeryName}_${imageNumber}.jpg" title="Project Title" data-lightbox-gallery="gallery1">
+                <div class="hover-text">
+                  <h4>clique para ampliar</h4>
+                </div>
+                  <img src="img/galeria/${galeryName}/${galeryName}_${imageNumber}.jpg" class="img-responsive" alt="Project Title"> 
+              </a>
+            </div>
+        </div>
+      </div>
+    `;
+
+    $(".portfolio-items").append(template);
+  },
+  init:function(){
+    for(var n=0; n< this.type.length; n++){
+      var nomeGaleria = this.type[n].name;
+      var qntImages = this.type[n].quantidade;
+
+      for(var i = 1; i<qntImages; i++){
+        this.loadImgsGalery(nomeGaleria, i);
+      }
+      
+    }
+  },
+}
 
 function main() {
 
 (function () {
    'use strict';
-   
+   galeries.init();
+
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
@@ -84,7 +133,7 @@ function main() {
         paginationSpeed : 400,
         singleItem:true
         });
-
+        
   	});	
 
 }());

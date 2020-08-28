@@ -40,7 +40,7 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 <!-- Navigation
     ==========================================-->
-<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+<nav id="menu" class="navbar navbar-default navbar-fixed-top on">
   <div class="container"> 
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -52,11 +52,11 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about" class="page-scroll">O pesqueiro</a></li>
         <li><a href="#services" class="page-scroll">Serviços</a></li>
-        <li><a href="#portfolio" class="page-scroll">Loja</a></li>
-        <li><a href="#testimonials" class="page-scroll">Galerias</a></li>
-        <li><a href="#contact" class="page-scroll">Eventos</a></li>
+        <!-- <li><a href="#portfolio" class="page-scroll">Loja</a></li> -->
+        <li><a href="#portfolio" class="page-scroll">Galerias</a></li>
+        <!-- <li><a href="#contact" class="page-scroll">Eventos</a></li> -->
         <li><a href="#contact" class="page-scroll">Como chegar</a></li>
-        <li><a href="#contact" class="page-scroll">Dicas</a></li>
+        <!-- <li><a href="#contact" class="page-scroll">Dicas</a></li> -->
       </ul>
     </div>
     <!-- /.navbar-collapse --> 
@@ -167,7 +167,7 @@
         <li>
           <ol class="type">
             <li><a href="#" data-filter="*" class="active">Todas</a></li>
-            <li><a href="#" data-filter=".pesca" class="active">Pesca</a></li>
+            <li><a href="#" data-filter=".pesca" class="">Pesca</a></li>
             <li><a href="#" data-filter=".estrutura">Estrutura</a></li>
             <li><a href="#" data-filter=".restaurante">Restaurante</a></li>
             <!-- <li><a href="#" data-filter=".lazer">Áreas e lazer</a></li> -->
@@ -230,69 +230,80 @@
     </div>
     <div class="col-md-10 col-md-offset-1 contact-info">
       <div class="col-md-4">
-        <h3>Address</h3>
+        <h3>Endereço</h3>
         <hr>
         <div class="contact-item">
-          <p>4321 California St,</p>
-          <p>San Francisco, CA 12345</p>
+          <p>Travessa Cambiri, 500</p>
+          <p>Poá - SP</p>
         </div>
       </div>
       <div class="col-md-4">
-        <h3>Working Hours</h3>
+        <h3>Horário de funcionamento</h3>
         <hr>
         <div class="contact-item">
-          <p>Monday-Saturday: 07:00 - 18:00</p>
-          <p>Sunday: CLOSED</p>
+          <p>segunda-sexta: 07:00 - 18:00</p>
+          <p>sábado-domingo: 07:00 - 21:00</p>
         </div>
       </div>
       <div class="col-md-4">
-        <h3>Contact Info</h3>
+        <h3>Entre em contato</h3>
         <hr>
         <div class="contact-item">
-          <p>Phone: +1 123 456 1234</p>
-          <p>Email: info@company.com</p>
+          <p>(11) 98221 7786</p>
+          <p>contato@pesqueirorodaviva.eco.br</p>
         </div>
       </div>
     </div>
+
+    <!-- map section -->
+  <div class="col-md-12">
+    <h3>Veja o mapa</h3>
+    <hr>
+      <iframe class="iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0673195953314!2d-46.34949778553249!3d-23.566025567648534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce717982e50211%3A0xfcc39a8fcd4ac2e9!2sPesqueiro%20Roda%20Viva!5e0!3m2!1spt-BR!2sbr!4v1598623993021!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+
     <div class="col-md-8 col-md-offset-2">
-      <h3>Leave us a message</h3>
+      <h3>Envie uma mensagem</h3>
+      <hr>
       <form name="sentMessage" id="contactForm" novalidate>
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+              <input type="text" id="name" class="form-control" placeholder="nome" required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <input type="email" id="email" class="form-control" placeholder="e-mail" required="required">
               <p class="help-block text-danger"></p>
             </div>
           </div>
         </div>
         <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="mensagem" required></textarea>
           <p class="help-block text-danger"></p>
         </div>
         <div id="success"></div>
-        <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+        <button type="submit" class="btn btn-custom btn-lg">Enviar</button>
       </form>
     </div>
   </div>
 </div>
+
+
 <!-- Footer Section -->
 <div id="footer">
   <div class="container text-center">
     <div class="col-md-8 col-md-offset-2">
       <div class="social">
         <ul>
-          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+          <li><a href="https://www.facebook.com/pesqueirorodaviva/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+          
         </ul>
       </div>
-      <p>&copy; 2016 Landscaper. Designed by <a href="http://www.templatewire.com" rel="nofollow">TemplateWire</a></p>
+      <p>&copy; 2020. Todos os direitos reservados</p>
     </div>
   </div>
 </div>

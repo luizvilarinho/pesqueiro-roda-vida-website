@@ -397,7 +397,7 @@ ol.type li a:hover {
 }
 /* Testimonials Section */
 #testimonials {
-	background: #444 url(../img/imageBox/testimonials-bg.jpg) center center no-repeat fixed;
+	background: #444 url(../img/imagebox/testimonials-bg.jpg) center center no-repeat fixed;
 	background-size: cover;
 }
 #testimonials .overlay {
